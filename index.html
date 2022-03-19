@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập JS Buổi 4</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-gradient-to-r from-cyan-500 to-blue-500 text-[#eee]">
+    <!-- Bài 1 -->
+    <div class="w-full bg-white max-w-2xl px-4 mx-auto mt-10 e1 border border-gray-400 p-10 rounded-md">
+        <h1 class="text-2xl font-semibold mb-4 text-center">Bài tập 1</h1>
+
+        <form class="flex flex-col gap-y-5">
+            <div class="flex flex-col">
+                <p class="text-lg mb-1">Nhập điểm thi</p>
+                <div class="grid grid-cols-3 gap-2 e1BaseScore">
+                    <input type="text" class="border border-gray-500 focus:outline-none rounded-md text-base p-2" placeholder="Môn 1">
+                    <input type="text" class="border border-gray-500 focus:outline-none rounded-md text-base p-2" placeholder="Môn 2">
+                    <input type="text" class="border border-gray-500 focus:outline-none rounded-md text-base p-2" placeholder="Môn 3">
+                </div>
+            </div>
+            <div class="flex flex-col e1TargetScore">
+                <p class="text-lg mb-1">Nhập điểm chuẩn</p>
+                <input type="text" class="border border-gray-500 focus:outline-none rounded-md text-base p-2" placeholder="Điểm chuẩn">
+            </div>
+            <div class="flex flex-col e1Area">
+                <label class="text-lg">Khu vực ưu tiên</label>
+                <p class="text-sm mb-1">(Nhập X nếu không thuộc khu vực ưu tiên)</p>
+                <input type="text" class="border border-gray-500 focus:outline-none rounded-md text-base p-2" placeholder="Khu vực ưu tiên">
+            </div>
+            <div class="flex flex-col e1Type">
+                <label class="text-lg">Đối tượng ưu tiên</label>
+                <p class="text-sm mb-1">(Nhập 0 nếu không thuộc đối tượng ưu tiên)</p>
+                <input type="text" class="border border-gray-500 focus:outline-none rounded-md text-base p-2" placeholder="Đối tượng ưu tiên">
+            </div>
+            <div class="flex gap-x-4 items-center">
+                <button type="submit" class="e1Btn text-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:opacity-80 inline-block py-2 px-6 rounded-md text-white">Xét tuyển</button>
+                <div class="">
+                    <p class="e1ResultScore text-lg text-red-600">Số điểm của bạn là: </p>
+                    <p class="e1ResultType text-lg text-red-600">Hãy nhập thông tin để xét tuyển</p>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <!-- Bài 2 -->
+    <div class="w-full bg-white max-w-2xl px-4 mx-auto mt-10 e2 border border-gray-400 p-10 rounded-md">
+        <h1 class="text-2xl font-semibold mb-4 text-center">Bài tập 2</h1>
+
+        <form class="flex flex-col gap-y-5">
+            <div class="flex flex-col e2Name">
+                <p class="text-lg mb-1">Nhập họ và tên</p>
+                <input type="text" class="border border-gray-500 focus:outline-none rounded-md text-base p-2" placeholder="Họ và tên">
+            </div>
+            <div class="flex flex-col e2Number">
+                <p class="text-lg mb-1">Nhập số điện tiêu thụ</p>
+                <input type="text" class="border border-gray-500 focus:outline-none rounded-md text-base p-2" placeholder="Số điện tiêu thụ">
+            </div>
+            <div class="flex gap-x-4 items-center">
+                <button type="submit" class="e2Btn text-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:opacity-80 inline-block py-2 px-6 rounded-md text-white">Tính tiền điện</button>
+                <div class="">
+                    <p class="e2NameShow text-lg text-red-600">Hộ gia đình: </p>
+                    <p class="e2Result text-lg text-red-600">Số tiền điện của bạn là: </p>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <!-- Bài 3 -->
+    <div class="w-full bg-white max-w-2xl px-4 mx-auto mt-10 e3 border border-gray-400 p-10 rounded-md">
+        <h1 class="text-2xl font-semibold mb-4 text-center">Bài tập 3</h1>
+
+        <form class="flex flex-col gap-y-5">
+            <div class="flex flex-col e3Name">
+                <p class="text-lg mb-1">Nhập họ và tên</p>
+                <input type="text" class="border border-gray-500 focus:outline-none rounded-md text-base p-2" placeholder="Họ và tên">
+            </div>
+            <div class="flex flex-col e3Income">
+                <p class="text-lg mb-1">Nhập tổng thu nhập năm (đơn vị: triệu đồng)</p>
+                <input type="text" class="border border-gray-500 focus:outline-none rounded-md text-base p-2" placeholder="Tổng thu nhập năm">
+            </div>
+            <div class="flex flex-col e3People">
+                <p class="text-lg mb-1">Nhập số người phụ thuộc</p>
+                <input type="text" class="border border-gray-500 focus:outline-none rounded-md text-base p-2" placeholder="Tổng số người phụ thuộc">
+            </div>
+            <div class="flex gap-x-4 items-center">
+                <button type="submit" class="e3Btn text-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:opacity-80 inline-block py-2 px-6 rounded-md text-white">Tính thuế</button>
+                <div class="">
+                    <p class="e3NameShow text-lg text-red-600">Hộ gia đình: </p>
+                    <p class="e3Result text-lg text-red-600">Số thuế thu nhập của bạn là: </p>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <!-- Bài 4 -->
+    <div class="w-full bg-white max-w-2xl px-4 mx-auto my-10 e4 border border-gray-400 p-10 rounded-md">
+        <h1 class="text-2xl font-semibold mb-4 text-center">Bài tập 4</h1>
+
+        <form class="flex flex-col gap-y-5">
+            <div class="flex flex-col e4Name">
+                <p class="text-lg mb-1">Nhập mã khách hàng</p>
+                <input type="text" class="border border-gray-500 focus:outline-none rounded-md text-base p-2" placeholder="Mã khách hàng">
+            </div>
+            <div class="flex flex-col e4Type">
+                <p class="text-lg mb-1">Chọn loại khách hàng</p>
+                <select class="border border-gray-500 focus:outline-none rounded-md text-base p-2">
+                    <option disabled selected="selected">Vui lòng chọn loại khách hàng</option>
+                    <option value="doanhnghiep">Khách hàng doanh nghiệp</option>
+                    <option value="canhan">Khách hàng cá nhân</option>
+                </select>
+            </div>
+            <div class="flex flex-col e4Channel">
+                <p class="text-lg mb-1">Số kênh cao cấp</p>
+                <input type="text" class="border border-gray-500 focus:outline-none rounded-md text-base p-2" placeholder="Số kênh cao cấp">
+            </div>
+            <div class="flex flex-col e4Port invisible opacity-0 transition-all">
+                <p class="text-lg mb-1">Số cổng kết nối</p>
+                <input type="text" class="border border-gray-500 focus:outline-none rounded-md text-base p-2" placeholder="Số cổng kết nối">
+            </div>
+            <div class="flex gap-x-4 items-center">
+                <button type="submit" class="e4Btn text-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:opacity-80 inline-block py-2 px-6 rounded-md text-white">Tính phí cáp</button>
+                <div class="">
+                    <p class="e4NameShow text-lg text-red-600">Mã khách hàng: </p>
+                    <p class="e4Result text-lg text-red-600">Số tiền phí cáp của bạn là: </p>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
